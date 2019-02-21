@@ -2,7 +2,7 @@ import requests
 from get_api_keys import get_api_keys
 from get_base_url import get_base_url
 
-def search_video(query):
+def youtube(query):
     """This function takes a query and performs a search on youtube"""
 
     api_key = get_api_keys("YOUTUBE")
