@@ -1,12 +1,12 @@
 import requests
-from get_api_key import get_api_key
+from get_api_keys import get_api_keys
 from get_base_url import get_base_url
 
 def word_meaning(word):
     """This function takes a word and finds the meaning, synonyms/antonyms of that word"""
 
-    app_id = get_api_key("OXFORD_APP_ID")
-    app_key = get_api_key("OXFORD_APP_KEY")
+    app_id = get_api_keys("OXFORD_APP_ID")
+    app_key = get_api_keys("OXFORD_APP_KEY")
     header = {
         "app_id": app_id,
         "app_key": app_key
