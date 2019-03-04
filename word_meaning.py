@@ -2,9 +2,10 @@ import requests
 from get_api_keys import get_api_keys
 from get_base_url import get_base_url
 
-def word_meaning(word):
+def word_meaning(dialogflow_resp):
     """This function takes a word and finds the meaning, synonyms/antonyms of that word"""
 
+    word = dialogflow_resp['result']['parameters']['word']
     app_id = get_api_keys("OXFORD_APP_ID")
     app_key = get_api_keys("OXFORD_APP_KEY")
     header = {
@@ -19,7 +20,8 @@ def word_meaning(word):
         meaning = response.json()['results'][0]['lexicalEntries'][0]['entries'][0]['senses'][0]['definitions'][0]
         example = response.json()['results'][0]['lexicalEntries'][0]['entries'][0]['senses'][0]['examples'][0]
         result = {'meaning': meaning, 'example': example['text']}
-        return result
+        speech = None
+        return speech, [result]
 
 # word = input('Enter a word : ')
 # word_meaning(word)
