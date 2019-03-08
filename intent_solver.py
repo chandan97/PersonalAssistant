@@ -5,13 +5,15 @@ from custom_search import custom_search
 from word_meaning import word_meaning
 from youtube import youtube
 from news import news
+from fallback import fallback
 
 actions = {
     "bing_search": bing_search,
     "custom_search": custom_search,
     "word_meaning": word_meaning,
     "youtube": youtube,
-    "news": news
+    "news": news,
+    "fallback": fallback
 }
 
 def intent_solver(dialogflow_resp):
