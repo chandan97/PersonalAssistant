@@ -1,5 +1,5 @@
 import requests
-import bingscraper as bs
+# import bingscraper as bs
 import os
 
 def bing_search(dialogflow_resp):

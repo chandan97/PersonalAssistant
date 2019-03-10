@@ -6,6 +6,7 @@ from word_meaning import word_meaning
 from youtube import youtube
 from news import news
 from fallback import fallback
+from currency_converter import currency_converter
 
 actions = {
     "bing_search": bing_search,
@@ -13,7 +14,8 @@ actions = {
     "word_meaning": word_meaning,
     "youtube": youtube,
     "news": news,
-    "fallback": fallback
+    "fallback": fallback,
+    "currency_converter": currency_converter
 }
 
 def intent_solver(dialogflow_resp):

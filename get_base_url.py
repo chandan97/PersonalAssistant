@@ -6,6 +6,7 @@ os.environ['WEATHER'] = "https://api.openweathermap.org/data/2.5/weather"  #chan
 os.environ['STOCK'] =  "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY"
 os.environ['NEWS'] = "https://newsapi.org/v2/everything"
 os.environ['TOP_NEWS'] = "https://newsapi.org/v2/top-headlines"
+os.environ['CURRENCY_CONVERT'] = "https://free.currencyconverterapi.com/api/v6/convert"
 
 def get_base_url(key):
     return os.environ.get(key)

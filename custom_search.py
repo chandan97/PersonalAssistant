@@ -14,5 +14,5 @@ def custom_search(query):
     print(result)
     return result
 
-# query = input('Enter a query : ')
+# query = input('Enter a query : ') 
 # custom_search(query)

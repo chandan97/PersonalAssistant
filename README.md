@@ -6,3 +6,4 @@
 * Custom Google Search
 * Bing Search
 * Get News Information
+* Currency conversion

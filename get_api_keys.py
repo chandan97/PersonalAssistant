@@ -6,6 +6,6 @@ os.environ['CUSTOM_SEARCH_ID'] = "003395937100330916829:cwjq6rqad7i"  # Devin - 
 os.environ['CUSTOM_SEARCH_KEY'] = "AIzaSyAlYdimlBv24zeCg_7VMsqrM57vTCwZebE"  # Devin - Google Custom Search Api
 os.environ['CLIENT_ACCESS_TOKEN'] = "d4305116581d4ed988f6b6e652abb64c"  # Devin - Dialogflow
 os.environ['NEWS_API'] = "b3581e68ed2b4024b4fc1a9e0550f900"  # Chandan - News Api
-
+os.environ['CURRENCY_API']="906e0f8d0fcac99f3e8b" #Chandan - CurrencyconverterAPI
 def get_api_keys(key):
     return os.environ.get(key)
